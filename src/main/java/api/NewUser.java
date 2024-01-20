@@ -1,6 +1,8 @@
 package api;
 
-public class NewUser{
+
+public class NewUser {
+
     private String email;
     private String password;
     private String name;

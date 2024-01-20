@@ -1,5 +1,6 @@
 package po;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,7 +10,9 @@ public class PersonalAccountPage extends BasePage {
     public PersonalAccountPage(WebDriver webDriver) {
         super(webDriver);
     }
-     public void clickPersonalAccountExitButton(){
+
+    @Step("Clicks on on the exit button in personal account")
+    public void clickPersonalAccountExitButton() {
         clickElement(loginPagePasswordResetLink);
-}
+    }
 }
